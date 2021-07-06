@@ -1,11 +1,10 @@
 .header
-  background-color: #fff
+  background-color: $white
   &-top
     display: flex
     align-items: center
     justify-content: space-between
-    padding-top: 40px
-    padding-bottom: 40px
+    padding: 40px 0
   &__search
     margin-right: auto
     margin-left: 108px
@@ -18,10 +17,10 @@
   &__input
     width: 350px
     height: 100%
-    padding-left: 23px
-    padding-right: 75px
-    background-color: #F5FAFE
+    padding: 0 75px 0 23px
+    background-color: $input-color
     border: none
+    outline: none
     font-size: 12px
     line-height: 15px
     color: $text-color
@@ -32,6 +31,8 @@
     width: 65px
     height: 100%
     border: none
+    outline: none
+    cursor: pointer
     background-color: $primary
 .user
   display: flex
@@ -44,6 +45,6 @@
     object-fit: cover
   &__name
     margin-left: 18px
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 14px
+    line-height: 18px
     color: $text-color

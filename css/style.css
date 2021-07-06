@@ -1,10 +1,9 @@
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-  font-family: 'Mulish', sans-serif;
+  font-family: "Mulish", sans-serif;
   color: #333333;
 }
 
@@ -59,8 +58,7 @@ h1 {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
   /* 1 */
   height: 0;
   /* 1 */
@@ -97,8 +95,7 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  text-decoration: underline dotted;
   /* 2 */
 }
 
@@ -245,8 +242,7 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   /* 1 */
   color: inherit;
   /* 2 */
@@ -280,8 +276,7 @@ textarea {
  */
 [type="checkbox"],
 [type="radio"] {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   /* 1 */
   padding: 0;
   /* 2 */
@@ -357,21 +352,14 @@ template {
 }
 
 .header {
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .header-top {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 0;
 }
 
 .header__search {
@@ -380,8 +368,6 @@ template {
 }
 
 .search {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
   overflow: hidden;
@@ -392,10 +378,10 @@ template {
 .search__input {
   width: 350px;
   height: 100%;
-  padding-left: 23px;
-  padding-right: 75px;
+  padding: 0 75px 0 23px;
   background-color: #F5FAFE;
   border: none;
+  outline: none;
   font-size: 12px;
   line-height: 15px;
   color: #333333;
@@ -408,16 +394,14 @@ template {
   width: 65px;
   height: 100%;
   border: none;
+  outline: none;
+  cursor: pointer;
   background-color: #EC1F46;
 }
 
 .user {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   text-decoration: none;
 }
 
@@ -425,8 +409,7 @@ template {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .user__name {
@@ -435,4 +418,3 @@ template {
   line-height: 18px;
   color: #333333;
 }
-/*# sourceMappingURL=style.css.map */
