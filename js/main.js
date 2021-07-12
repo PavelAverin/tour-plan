@@ -7,4 +7,10 @@ const swiper = new Swiper('.swiper-container', {
     nextEl: '.slider-button--next',
     prevEl: '.slider-button--prev',
   },
+
+  // Keyboard navigation
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+  },
 });
