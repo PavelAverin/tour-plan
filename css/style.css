@@ -716,12 +716,7 @@ template {
 }
 
 .newsletter {
-  position: relative;
   padding: 98px 0 87px 0;
-  background-image: url(../img/newsletter-bg.jfif);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .newsletter::before {
@@ -759,6 +754,19 @@ template {
   font-size: 36px;
   line-height: 45px;
   text-transform: uppercase;
+}
+
+.parallax-window {
+  z-index: 10;
+  position: relative;
+  overflow: hidden;
+}
+
+.parallax-window__item {
+  background-image: url(../img/newsletter-bg.jfif);
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .subscribe {

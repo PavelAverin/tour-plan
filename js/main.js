@@ -32,6 +32,11 @@ const reviewsSlider = new Swiper('.reviews-slider', {
   },
 });
 
+$('.parallax-window').parallax({
+  imageSrc: '../img/newsletter-bg.jfif',
+  speed: 0.6,
+});
+
 // Подключение Яндекс API   
 ymaps.ready(init);
     function init(){

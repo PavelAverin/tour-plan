@@ -1,10 +1,9 @@
 .newsletter
-  position: relative
   padding: 98px 0 87px 0
-  background-image: url(../img/newsletter-bg.jfif)
-  background-position: center
-  background-repeat: no-repeat
-  background-size: cover
+  // background-image: url(../img/newsletter-bg.jfif)
+  // background-position: center
+  // background-repeat: no-repeat
+  // background-size: cover
   &::before
     content: ''
     position: absolute
@@ -34,6 +33,15 @@
       font-size: 36px
       line-height: 45px
       text-transform: uppercase
+.parallax-window
+  z-index: 10
+  position: relative
+  overflow: hidden
+  &__item
+    background-image: url(../img/newsletter-bg.jfif)
+    position: absolute
+    background-repeat: no-repeat
+    background-size: cover
 .subscribe
   position: relative
   width: 350px
