@@ -29,10 +29,13 @@
       font-size: 36px
       line-height: 45px
       text-transform: uppercase
-.parallax-window
-  z-index: 1000
-  position: relative
-  overflow: hidden
+.parallax
+  &-mirror
+    z-index: 1000
+  &-window
+    z-index: 1000
+    position: relative
+    overflow: hidden
   &__item
     background-image: url(../img/newsletter-bg.jfif)
     position: absolute
