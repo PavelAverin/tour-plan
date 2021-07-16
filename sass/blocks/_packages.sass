@@ -1,0 +1,103 @@
+.packages
+  padding: 40px 0 70px
+  &__title
+    font-weight: bold
+    font-size: 36px
+    line-height: 45px
+    text-align: center
+    text-transform: uppercase
+    margin: 0 0 65px
+  &-wrapper
+    display: grid
+    grid-template-areas: "grid-1 grid-1 grid-2" "grid-1 grid-1 grid-2" "grid-3 grid-4 grid-5" "grid-3 grid-4 grid-5"
+    grid-template-rows: repeat(4, 250px)
+    grid-template-columns: repeat(3, 350px)
+    grid-gap: 30px
+  &-card
+    display: flex
+    flex-direction: column
+    border-radius: 8px
+    overflow: hidden
+    background-color: $dark
+    color: $white
+    font-family: $nunito
+    &__image
+      object-fit: cover
+      width: 100%
+      height: 250px
+      &--grid-1
+        width: 50%
+        height: 100%
+    &__info
+      padding: 30px 21px 25px 32px
+      &--grid-1
+        padding: 46px 21px 30px 43px
+    &__title
+      font-weight: bold
+      font-size: 18px
+      line-height: 23px
+      margin: 0 0 23px
+      &--grid-1
+      margin: 5px 0 27px
+    &__text
+      font-weight: normal
+      font-size: 14px
+      line-height: 160.6%
+      margin-bottom: 34px
+    &__about
+      display: flex
+      height: 67px
+      flex-direction: column
+      justify-content: space-between
+      margin-bottom: 24px
+      &--grid-1
+        margin-bottom: 37px
+    &__geo, 
+    &__guests,
+    &__room
+      display: flex
+      align-items: center
+    &__description
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+      margin-left: 14px
+    &__price-tag
+      font-weight: normal
+      font-size: 14px
+      line-height: 18px
+      text-decoration-line: line-through
+    &__bottom
+      display: flex
+      align-items: center
+      justify-content: space-between
+    &__discount
+      font-weight: bold
+      font-size: 24px
+      line-height: 30px
+    &__button
+      padding: 11px 27px
+      border-radius: 4px
+      font-weight: 600
+      font-size: 14px
+      line-height: 19px
+      background-color: $primary
+      color: $white
+      border: none
+      cursor: pointer
+.grid-1
+  grid-area: grid-1
+  flex-direction: row
+.grid-2
+  grid-area: grid-2
+.grid-3
+  grid-area: grid-3
+.grid-4
+  grid-area: grid-4
+.grid-5
+  grid-area: grid-5
+  
+      
+
+    
+      
