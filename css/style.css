@@ -528,6 +528,7 @@ template {
 .hotel-slider {
   width: 728px;
   height: 450px;
+  margin-left: 0;
 }
 
 .hotel-slider__item {
@@ -1638,5 +1639,30 @@ template {
     order: 0;
     flex-basis: 100%;
     margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 350px) {
+  .footer-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer__social-network {
+    flex-wrap: wrap;
+  }
+  .footer__input {
+    width: 100%;
+  }
+  .footer__link {
+    font-size: 10px;
+  }
+  .footer__item {
+    font-size: 10px;
+  }
+  .footer__form {
+    max-width: 300px;
+  }
+  .footer__message {
+    width: 100%;
   }
 }
