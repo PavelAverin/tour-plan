@@ -21,6 +21,9 @@
       &__image
         &--grid-1
           width: 310px
+  .footer
+    &__input
+      flex-basis: 100%
 @media ( max-width: 992px )
   .container,
   .newsletter-wrapper
@@ -76,6 +79,38 @@
       &__image
         &--grid-1
           width: 345px
+  .footer
+    &-wrapper
+      grid-template-columns: repeat(6, 1fr)
+      grid-row-gap: 40px
+    &__input
+      flex-basis: 49%
+    &__logo
+      grid-row: 1 / 2
+      grid-column: span 2
+    &__social
+      &-network
+        grid-row: 1 / 2
+        grid-column: span 4
+        align-self: center
+    &__categories
+      grid-row: 2 / 3
+      grid-column: span 2
+    &__legal 
+      grid-column: span 2
+    &__additional
+      grid-column: span 2
+    &__contact
+      &-details
+        grid-column: span 5
+        grid-row: 3
+      &-form
+        grid-column: span 5
+        grid-row: 4
+    &__bottom
+      justify-content: flex-start
+      &-wrapper
+        width: 100%
 @media ( max-width: 768px )
   .container
     max-width: 700px
@@ -173,6 +208,9 @@
           line-height: 24px
   .grid-1
     flex-direction: column
+  .footer
+    &__input
+      flex-basis: 100%
 @media ( max-width: 576px )
   .logo
     width: 99px
@@ -204,6 +242,38 @@
       grid-template-areas: "grid-1" "grid-1" "grid-2" "grid-2 " "grid-3" "grid-3" "grid-4" "grid-4" "grid-5" "grid-5"
       grid-template-rows: 1fr repeat(10, 250px)
       grid-template-columns: repeat(1, 100%)
+  .footer
+    &-wrapper
+      grid-template-columns: 1fr
+    &__logo
+      grid-row: 1
+      grid-column: 1
+    &__social
+      &-network
+        grid-row: 2
+        grid-column: 1
+    &__additional
+      grid-row: 3
+      grid-column: 1
+    &__categories
+      grid-row: 4
+      grid-column: 1
+    &__legal 
+      grid-row: 5
+      grid-column: 1
+    &__contact
+      &-details
+        grid-row: 6
+        grid-column: 1
+      &-form
+        grid-row: 7
+        grid-column: 1
+    &__button
+      order: 1
+    &__info
+      order: 0
+      flex-basis: 100%
+      margin-bottom: 15px
 
   
   
