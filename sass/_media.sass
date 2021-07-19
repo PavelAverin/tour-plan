@@ -238,10 +238,12 @@
   .card
     width: 100%
   .packages
+    padding-bottom: 80px
     &-wrapper
       grid-template-areas: "grid-1" "grid-1" "grid-2" "grid-2 " "grid-3" "grid-3" "grid-4" "grid-4" "grid-5" "grid-5"
-      grid-template-rows: 1fr repeat(10, 250px)
-      grid-template-columns: repeat(1, 100%)
+      grid-template-rows: 1fr repeat(9, 250px)
+      grid-template-columns: 1fr
+      grid-row: 0
   .footer
     &-wrapper
       grid-template-columns: 1fr

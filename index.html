@@ -708,16 +708,24 @@
                 <img src="img/contact-call.svg" alt="Icon: Phone Call" class="footer__icon">
               </div>
               <!-- /.footer__icon-wrapper -->
-              Tel (business hours) : 269 1500<br>
-              Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00 pm)<br>
-              Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)
+              <div class="footer__links--phones">
+                <a href="tel:269 1500" class="footer__link">
+                  Tel (business hours) : 269 1500
+                </a><br>
+                <a href="tel:52-56-61-38" class="footer__link">
+                  Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00 pm)
+                </a><br>
+                <a href="tel:52-56-61-38" class="footer__link">
+                  Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)
+                </a>
+              </div>
             </li>
             <li class="footer__item footer__item--mb-2">
               <div class="footer__icon-wrapper">
                 <img src="img/contact-email.svg" alt="Icon: Email" class="footer__icon">
               </div>
               <!-- /.footer__icon-wrapper -->
-              cherly.lawson@example.com
+              <a class="footer__link" href="mailto:cherly.lawson@example.com">cherly.lawson@example.com</a>
             </li>
           </ul>
         </div>
@@ -726,8 +734,8 @@
         <div class="footer__contact-form">
           <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
           <form action="#" class="footer__form">
-            <input type="text" class="input footer__input" placeholder="Your Full Name*">
-            <input type="text" class="input footer__input" placeholder="Phone Number*">
+            <input type="text" class="input footer__input" placeholder="Your Full Name*" required>
+            <input type="text" class="input footer__input" placeholder="Phone Number*" required>
             <textarea class="footer__message" cols="30" rows="10" placeholder="Message"></textarea>
             <button class="button footer__button">Send</button>
             <span class="footer__info">* Required Fields</span>
