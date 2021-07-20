@@ -39,15 +39,22 @@ $('.parallax-window').parallax({
 
 // Подключение Яндекс API   
 ymaps.ready(init);
-    function init(){
-        var myMap = new ymaps.Map("map", {
-            center: [7.890741, 98.294690],
-            zoom: 17
-        });
+function init(){
+  var myMap = new ymaps.Map("map", {
+      center: [7.890741, 98.294690],
+      zoom: 17
+  });
 
-      var myPlacemark = new ymaps.Placemark([7.890741, 98.294690]);
+  var myPlacemark = new ymaps.Placemark([7.890741, 98.294690]);
 
-      myMap.geoObjects.add(myPlacemark);
-    };
+  myMap.geoObjects.add(myPlacemark);
+};
+
+
+var menuButton = document.querySelector(".menu-button");
+menuButton.addEventListener('click', function () {
+  console.log('Клик по кнопке меню');
+  document.querySelector(".navbar-bottom").classList.toggle("navbar-bottom--visible");
+});
 
 

@@ -394,6 +394,10 @@ template {
   color: #ffffff;
 }
 
+.navbar-menu__item--mobile--visible {
+  display: none;
+}
+
 .navbar-menu__link {
   color: inherit;
   text-decoration: none;
@@ -467,6 +471,7 @@ template {
 .breadcrumb-list__item {
   font-size: 10px;
   line-height: 13px;
+  color: #0A223D;
 }
 
 .breadcrumb-list__item:not(:last-child)::after {
@@ -476,6 +481,7 @@ template {
 
 .breadcrumb-list__link {
   text-decoration: none;
+  color: #0A223D;
 }
 
 .hotel {
@@ -1442,11 +1448,57 @@ template {
     max-width: 700px;
     width: 92%;
   }
-  .navbar-top__search, .navbar-top__user {
+  body {
+    padding-top: 78px;
+  }
+  .navbar-top__search--mobile--hidden {
     display: none;
   }
-  .navbar-menu {
+  .navbar-top__search--mobile--visible {
+    display: flex;
+  }
+  .navbar-top__user {
+    flex-direction: column;
+    justify-content: start;
+  }
+  .navbar-top__user--mobile--hidden {
     display: none;
+  }
+  .navbar-top__user--mobile--visible {
+    display: flex;
+  }
+  .navbar__mobile--fixed {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 99;
+  }
+  .navbar-bottom {
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 78px;
+    padding-top: 30px;
+  }
+  .navbar-bottom--visible {
+    display: block;
+  }
+  .navbar-menu {
+    flex-direction: column;
+  }
+  .navbar-menu__item {
+    margin-bottom: 20px;
+  }
+  .navbar-menu__item--mobile--visible {
+    display: block;
+  }
+  .user__name--light {
+    color: #ffffff;
+    margin-left: 0;
+    margin-top: 10px;
   }
   .menu-button {
     display: flex;
