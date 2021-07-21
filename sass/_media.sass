@@ -172,12 +172,16 @@
       align-items: center
       justify-content: space-between
       flex-direction: column
+      background-color: transparent
       border: none
       cursor: pointer
       &__line
         width: 16px
         height: 1px
         background-color: $text-color
+    &__button
+      &--hidden
+        display: none
   .stars
     flex-basis: auto
   .hotel
@@ -253,6 +257,25 @@
   .footer
     &__input
       flex-basis: 100%
+  .close
+    display: none
+    &:before,
+    &::after
+      content: ""
+      position: absolute
+      top: 38px
+      right: 34px
+      width: 16px
+      height: 2px
+      background-color: $text-color
+    &::before
+      webkit-transform: rotate(45deg)
+      transform: rotate(45deg)
+    &::after
+      webkit-transform: rotate(-45deg)
+      transform: rotate(-45deg)
+    &--visible
+      display: flex
 @media ( max-width: 576px )
   .logo
     width: 99px
@@ -338,5 +361,9 @@
       max-width: 300px
     &__message
       width: 100%
+  .navbar
+    &-top
+      &__search
+        width: 80%
 
         

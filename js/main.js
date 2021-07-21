@@ -50,10 +50,19 @@ function init(){
   myMap.geoObjects.add(myPlacemark);
 };
 
-
+// скрипт разворачивания мобильного меню и смены кнопки на крестик
 var menuButton = document.querySelector(".menu-button");
 menuButton.addEventListener('click', function () {
-  console.log('Клик по кнопке меню');
+  document.querySelector(".navbar-bottom").classList.toggle("navbar-bottom--visible");
+  document.querySelector(".navbar-top__menu-button").classList.toggle("menu__button--hidden");
+  document.querySelector(".close").classList.toggle("close--visible");
+});
+
+// скрипт сворачивания мобильного меню и смены кнопки на бургер
+var menuClose = document.querySelector(".close");
+menuClose.addEventListener('click', function () {
+  document.querySelector(".close").classList.toggle("close--visible");
+  document.querySelector(".navbar-top__menu-button").classList.toggle("menu__button--hidden");
   document.querySelector(".navbar-bottom").classList.toggle("navbar-bottom--visible");
 });
 
