@@ -460,6 +460,10 @@ template {
   color: #333333;
 }
 
+.close {
+  display: none;
+}
+
 .breadcrumb-list {
   display: flex;
   align-items: center;
