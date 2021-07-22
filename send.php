@@ -24,14 +24,18 @@ $body = "
 // Настройки PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();
 try {
+    
     $mail->isSMTP();   
     $mail->CharSet = "UTF-8";
     $mail->SMTPAuth   = true;
+    $mail->SMTPAutoTLS = false;
+    $mail->SMTPSecure = false;
+    $mail->Port = 25;
     // $mail->SMTPDebug = 2;
     $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
 
     // Настройки вашей почты
-    $mail->Host       = 'mail.aps-smr.ru'; // SMTP сервера вашей почты
+    $mail->Host       = 'https://aps-smr.ru/homeworks/lesson-27/index.html'; // SMTP сервера вашей почты
     $mail->Username   = 'info@aps-smr.ru'; // Логин на почте
     $mail->Password   = 'Z8k2I9b8'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
