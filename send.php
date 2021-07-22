@@ -39,7 +39,7 @@ try {
     $mail->setFrom('info@aps-smr.ru', 'Павел Аверин'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
-    $mail->addAddress('averin.samara@gmail.com');  
+    $mail->addAddress('admin@aps-smr.ru');  
 
     // Прикрипление файлов к письму
 if (!empty($file['name'][0])) {
