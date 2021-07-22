@@ -31,12 +31,12 @@ try {
     $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
 
     // Настройки вашей почты
-    $mail->Host       = 'smtp.mail.aps-smr.ru'; // SMTP сервера вашей почты
-    $mail->Username   = 'averinps.samara@aps-smr.ru'; // Логин на почте
-    $mail->Password   = '3D3y1R1b'; // Пароль на почте
+    $mail->Host       = 'mail.aps-smr.ru'; // SMTP сервера вашей почты
+    $mail->Username   = 'info@aps-smr.ru'; // Логин на почте
+    $mail->Password   = 'Z8k2I9b8'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
-    $mail->setFrom('averinps.samara@aps-smr.ru', 'Павел Аверин'); // Адрес самой почты и имя отправителя
+    $mail->setFrom('info@aps-smr.ru', 'Павел Аверин'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
     $mail->addAddress('averin.samara@gmail.com');  
