@@ -28,19 +28,19 @@ try {
     $mail->isSMTP();   
     $mail->CharSet = "UTF-8";
     $mail->SMTPAuth   = true;
-    // $mail->SMTPDebug = 2;
+    $mail->SMTPDebug = 2;
     $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
 
     // Настройки вашей почты
-    $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
-    $mail->Username   = 'averin.samara@gmail.com'; // Логин на почте
-    $mail->Password   = 'In3GunT163'; // Пароль на почте
-    $mail->SMTPSecure = 'ssl';
-    $mail->Port       = 465;
-    $mail->setFrom('averin.samara@gmail.com', 'Павел Аверин'); // Адрес самой почты и имя отправителя
+    $mail->Host       = 'smtp.yandex.ru'; // SMTP сервера вашей почты
+    $mail->Username   = 'pavel.averin.14@yandex.ru'; // Логин на почте
+    $mail->Password   = 'Timofeeva_My_Love'; // Пароль на почте
+    // $mail->SMTPSecure = 'ssl';
+    $mail->Port       = 25;
+    $mail->setFrom('pavel.averin.14@yandex.ru', 'Павел Аверин'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
-    $mail->addAddress('pavel.averin.14@yandex.ru');  
+    $mail->addAddress('averin.samara@gmail.com');  
 
     // Прикрипление файлов к письму
 if (!empty($file['name'][0])) {
@@ -71,3 +71,4 @@ else {$result = "error";}
 
 // Отображение результата
 header('Location: thankyou.html');
+// echo json_encode(["result" => $result, "resultfile" => $rfile, "status" => $status]);
