@@ -28,22 +28,19 @@ try {
     $mail->isSMTP();   
     $mail->CharSet = "UTF-8";
     $mail->SMTPAuth   = true;
-    $mail->SMTPAutoTLS = false;
-    $mail->SMTPSecure = false;
-    $mail->Port = 25;
     // $mail->SMTPDebug = 2;
     $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
 
     // Настройки вашей почты
-    $mail->Host       = 'https://aps-smr.ru/homeworks/lesson-27/index.html'; // SMTP сервера вашей почты
-    $mail->Username   = 'info@aps-smr.ru'; // Логин на почте
-    $mail->Password   = 'Z8k2I9b8'; // Пароль на почте
+    $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
+    $mail->Username   = 'averin.samara@gmail.com'; // Логин на почте
+    $mail->Password   = 'In3GunT163'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
-    $mail->setFrom('info@aps-smr.ru', 'Павел Аверин'); // Адрес самой почты и имя отправителя
+    $mail->setFrom('averin.samara@gmail.com', 'Павел Аверин'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
-    $mail->addAddress('admin@aps-smr.ru');  
+    $mail->addAddress('pavel.averin.14@yandex.ru');  
 
     // Прикрипление файлов к письму
 if (!empty($file['name'][0])) {
