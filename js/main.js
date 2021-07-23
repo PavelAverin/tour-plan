@@ -79,7 +79,6 @@ $(document).ready(function () {
   modalButton.on('click', openModal);
   closeModalButton.on('click', closeModal);
   
-  
 
   // функция для открытия модального окна
   function openModal() {
@@ -103,14 +102,21 @@ $(document).ready(function () {
 
   // функция для закрытия модального окна при нажатии Escape
   $(document).keyup(function(e) {
-    if (e.key === "Escape") {
-      console.log("Нажата клавиша Escape");
-      
-      var modalOverlay = $(".modal__overlay");
-      var modalDialog = $(".modal__dialog");
-
+    var modalOverlay = $(".modal__overlay");
+    var modalDialog = $(".modal__dialog");
+    if (e.key === "Escape") {      
       modalOverlay.removeClass('modal__overlay--visible');
       modalDialog.removeClass('modal__dialog--visible');
-    }
+    };
+  });
+
+  // функция для закрытия модального окна при нажатии на overlay
+  $(document).mouseup(function (e) {
+    var modalOverlay = $(".modal__overlay");
+    var modalDialog = $(".modal__dialog");
+    if (!modalDialog.is(e.target) && modalDialog.has(e.target).length === 0) {
+      modalOverlay.removeClass('modal__overlay--visible');
+      modalDialog.removeClass('modal__dialog--visible');
+    };
   });
 });

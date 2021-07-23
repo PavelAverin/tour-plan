@@ -1531,6 +1531,9 @@ template {
   .footer__bottom-wrapper {
     width: 100%;
   }
+  .modal__dialog {
+    padding: 30px 50px;
+  }
   .modal__form {
     display: flex;
     justify-content: space-between;
