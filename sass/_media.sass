@@ -23,7 +23,7 @@
           width: 310px
   .footer
     &__input
-      flex-basis: 100%
+      flex-basis: 100%    
 @media ( max-width: 992px )
   .container,
   .newsletter-wrapper
@@ -111,6 +111,25 @@
       justify-content: flex-start
       &-wrapper
         width: 100%
+  .modal
+    &__form
+      display: flex
+      justify-content: space-between
+      flex-wrap: wrap
+    &__input
+      order: 1
+      flex-basis: 100%
+    &__message
+      order: 2
+      flex-basis: 100%
+    &__info
+      order: 3
+      flex-basis: 100%
+      margin-left: 0
+      margin-bottom: 15px
+    &__button
+      order: 4
+      flex-basis: 100%
 @media ( max-width: 768px )
   .container
     max-width: 700px
@@ -276,6 +295,26 @@
       transform: rotate(-45deg)
     &--visible
       display: flex
+  .modal
+    &__dialog
+      width: 92%
+    &__title
+      font-size: 10px
+    &__input
+      font-size: 10px
+      height: 30px
+      padding: 0 13px
+    &__message
+      font-size: 10px
+      height: 80px
+      padding: 10px 13px
+    &__info
+    font-size: 10px
+    &__button
+      font-size: 10px
+      min-width: 100%
+      min-height: 30px
+      padding: 10px
 @media ( max-width: 576px )
   .logo
     width: 99px
@@ -365,5 +404,7 @@
     &-top
       &__search
         width: 80%
+  
+
 
         
