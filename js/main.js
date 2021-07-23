@@ -75,26 +75,42 @@ $(document).ready(function () {
   var modalButton = $('[data-toggle=modal]');
   var closeModalButton = $(".modal__close");
 
+
   modalButton.on('click', openModal);
   closeModalButton.on('click', closeModal);
+  
+  
 
   // функция для открытия модального окна
   function openModal() {
     var modalOverlay = $(".modal__overlay");
     var modalDialog = $(".modal__dialog");
 
-    modalOverlay.addClass('modal__overlay--visible')
-    modalDialog.addClass('modal__dialog--visible')
+    modalOverlay.addClass('modal__overlay--visible');
+    modalDialog.addClass('modal__dialog--visible');
   };
 
   // функция для закрытия модального окна
   function closeModal(event) {
     event.preventDefault();
-    
+
     var modalOverlay = $(".modal__overlay");
     var modalDialog = $(".modal__dialog");
 
-    modalOverlay.removeClass('modal__overlay--visible')
-    modalDialog.removeClass('modal__dialog--visible')
+    modalOverlay.removeClass('modal__overlay--visible');
+    modalDialog.removeClass('modal__dialog--visible');
   };
+
+  // функция для закрытия модального окна при нажатии Escape
+  $(document).keyup(function(e) {
+    if (e.key === "Escape") {
+      console.log("Нажата клавиша Escape");
+      
+      var modalOverlay = $(".modal__overlay");
+      var modalDialog = $(".modal__dialog");
+
+      modalOverlay.removeClass('modal__overlay--visible');
+      modalDialog.removeClass('modal__dialog--visible');
+    }
+  });
 });
