@@ -121,10 +121,28 @@ $(document).ready(function () {
   });
 
 
+  // $.validator.addMethod(
+  //   'regexp',
+  //   function(value, element, regexp) {
+  //     var re = new RegExp(regexp);
+  //     return this.optional(element) || regexp.test(value);
+  //   },
+  // );
+
   // Обработка форм
   $('.form').each(function () {
     $(this).validate({
       errorClass: "invalid",
+      rules: {
+        email: {
+          pattern: /[0-9a-z_-]+@[0-9a-z_-]+\.[a-z]{2,5}/i,
+        },
+        // email: {
+        //   required: true,
+        //   email: true,
+        //   regexp: ,
+        // },
+      },
       messages: {
         name: {
           required: "Please specify your name",
@@ -132,7 +150,8 @@ $(document).ready(function () {
         },
         email: {
           required: "We need your email address to contact you",
-          email: "Your email address must be in the format of name@domain.com"
+          email: "Your email address must be in the format of name@domain.com",
+          pattern: 'Format for email: name@domain.com',
         },
         phone: {
           required: "Please specify your phone",
@@ -141,6 +160,12 @@ $(document).ready(function () {
     });
   });
 
+  // Ввод в input для имени только буквы
+  $('body').on('input', '.input-name', function(){
+    this.value = this.value.replace(/[^a-zа-яё\s]/gi, '');
+  });
+
   // Маска для формы телефона
   $('.phone_ru').mask('+7 (999) 999-99-99');
+
 });
