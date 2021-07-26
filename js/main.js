@@ -119,4 +119,28 @@ $(document).ready(function () {
       modalDialog.removeClass('modal__dialog--visible');
     };
   });
+
+
+  // Обработка форм
+  $('.form').each(function () {
+    $(this).validate({
+      errorClass: "invalid",
+      messages: {
+        name: {
+          required: "Please specify your name",
+          minlength: 2,
+        },
+        email: {
+          required: "We need your email address to contact you",
+          email: "Your email address must be in the format of name@domain.com"
+        },
+        phone: {
+          required: "Please specify your phone",
+        }
+      },
+    });
+  });
+
+  // Маска для формы телефона
+  $('.phone_ru').mask('+7 (999) 999-99-99');
 });
