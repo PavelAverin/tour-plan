@@ -121,14 +121,6 @@ $(document).ready(function () {
   });
 
 
-  // $.validator.addMethod(
-  //   'regexp',
-  //   function(value, element, regexp) {
-  //     var re = new RegExp(regexp);
-  //     return this.optional(element) || regexp.test(value);
-  //   },
-  // );
-
   // Обработка форм
   $('.form').each(function () {
     $(this).validate({
@@ -137,11 +129,6 @@ $(document).ready(function () {
         email: {
           pattern: /[0-9a-z_-]+@[0-9a-z_-]+\.[a-z]{2,5}/i,
         },
-        // email: {
-        //   required: true,
-        //   email: true,
-        //   regexp: ,
-        // },
       },
       messages: {
         name: {
@@ -168,4 +155,7 @@ $(document).ready(function () {
   // Маска для формы телефона
   $('.phone_ru').mask('+7 (999) 999-99-99');
 
+
+  // Инициализация AOS анимации
+  AOS.init();
 });

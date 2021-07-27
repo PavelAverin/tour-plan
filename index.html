@@ -8,6 +8,7 @@
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/aos.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -15,17 +16,17 @@
     <div class="container">
       <div class="navbar-top">
         <a href="/" class="logo">
-          <img src="img/horizontal-logo.svg" alt="Logo: Best Tour Plan" class="logo__image">
+          <img src="img/horizontal-logo.svg" alt="Logo: Best Tour Plan" class="logo__image" data-aos="fade-down" data-aos-delay="100">
         </a>
 
-        <form action="#" class="search navbar-top__search navbar-top__search--mobile--hidden">
+        <form action="#" class="search navbar-top__search navbar-top__search--mobile--hidden" data-aos="fade-down" data-aos-delay="300">
           <input type="text" class="search__input" placeholder="Search Location">
           <button class="search__button">
             <img src="img/search.svg" alt="Icon: Search">
           </button>
         </form>
 
-        <a href="#" class="user navbar-top__user navbar-top__user--mobile--hidden">
+        <a href="#" class="user navbar-top__user navbar-top__user--mobile--hidden" data-aos="fade-down" data-aos-delay="500">
           <img src="img/user-avatar.jpg" alt="Avatar: Nathan" class="user__avatar">
           <span class="user__name">Nathan</span>
         </a>
@@ -59,25 +60,25 @@
               </button>
             </form>
           </li>
-          <li class="navbar-menu__item">
+          <li class="navbar-menu__item" data-aos="fade-right" data-aos-delay="100">
             <a href="#" class="navbar-menu__link">All Deals</a>
           </li>
-          <li class="navbar-menu__item">
+          <li class="navbar-menu__item" data-aos="fade-right" data-aos-delay="200">
             <a href="#" class="navbar-menu__link">Hotels</a>
           </li>
-          <li class="navbar-menu__item">
+          <li class="navbar-menu__item" data-aos="fade-right" data-aos-delay="300">
             <a href="#" class="navbar-menu__link">Activities</a>
           </li>
-          <li class="navbar-menu__item">
+          <li class="navbar-menu__item" data-aos="fade-right" data-aos-delay="400">
             <a href="#" class="navbar-menu__link">Hotel Day Packages</a>
           </li>
-          <li class="navbar-menu__item">
+          <li class="navbar-menu__item" data-aos="fade-right" data-aos-delay="500">
             <a href="#" class="navbar-menu__link">Restaurants</a>
           </li>
-          <li class="navbar-menu__item">
+          <li class="navbar-menu__item" data-aos="fade-right" data-aos-delay="600">
             <a href="#" class="navbar-menu__link">Events</a>
           </li>
-          <li class="navbar-menu__item">
+          <li class="navbar-menu__item" data-aos="fade-right" data-aos-delay="700">
             <a href="#" class="navbar-menu__link">Rodrigues</a>
           </li>
         </ul>
@@ -89,7 +90,7 @@
   </header>
 
 
-  <nav class="breadcrumb">
+  <nav class="breadcrumb" data-aos="fade-right" data-aos-delay="300">
     <div class="container">
       <ul class="breadcrumb-list">
         <li class="breadcrumb-list__item">
@@ -111,7 +112,7 @@
   <section class="hotel">
     <div class="container">
       <div class="hotel-info">
-        <div class="hotel-info__text">
+        <div class="hotel-info__text"  data-aos="fade-right" data-aos-delay="500">
           <div class="hotel-info__wrapper">
             <div class="stars">
               <img src="img/Star.svg" alt="Icon: Star">
@@ -131,7 +132,7 @@
         </div>
         <!-- /.hotel-info__text -->
 
-        <div class="rating hotel-info__rating">
+        <div class="rating hotel-info__rating"  data-aos="fade-left" data-aos-delay="500">
           <span class="rating__text">User Rattings</span>
           <span class="rating__counter">4.5/5</span>
         </div>
@@ -140,7 +141,7 @@
       <!-- /.hotel-info -->
 
       <div class="hotel-grid">
-          <div class="swiper-container hotel-slider hotel__slider">
+          <div class="swiper-container hotel-slider hotel__slider" data-aos="flip-left" data-aos-delay="700">
             <div class="swiper-wrapper">
               <div class="swiper-slide hotel-slider__item">
                 <img class="swiper-slide__image" src="img/slide-01.jpg" alt="Slide">
@@ -170,7 +171,7 @@
           </div>
           <!-- /.swiper-container -->
 
-      <div class="hotel-right">
+      <div class="hotel-right" data-aos="flip-right" data-aos-delay="900">
         <div class="booking">
           <div class="booking__info">
             <div class="booking__price">
@@ -222,9 +223,9 @@
 
   <section class="packages">
     <div class="container">
-      <h2 class="packages__title">Other Packages</h2>
+      <h2 class="packages__title" data-aos="zoom-in">Other Packages</h2>
       <div class="packages-wrapper">
-        <div class="packages-card grid-1">
+        <div class="packages-card grid-1" data-aos="flip-left" data-aos-delay="100">
           <img src="img/packages-01.jpg" alt="Hotel Blue Haven" class="packages-card__image packages-card__image--grid-1">
           <div class="packages-card__info packages-card__info--grid-1">
             <div class="packages-card__rating">
@@ -271,7 +272,7 @@
         </div>
         <!-- /.packages-card -->
 
-        <div class="packages-card grid-2">
+        <div class="packages-card grid-2" data-aos="flip-left" data-aos-delay="300">
           <img src="img/packages-02.jpg" alt="LUX* Belle Mare" class="packages-card__image">
           <div class="packages-card__info">
             <h3 class="packages-card__title">LUX* Belle Mare</h3>
@@ -307,7 +308,7 @@
         </div>
         <!-- /.packages-card -->
 
-        <div class="packages-card grid-3">
+        <div class="packages-card grid-3" data-aos="flip-left" data-aos-delay="200">
           <img src="img/packages-03.jpg" alt="White Palace" class="packages-card__image">
           <div class="packages-card__info">
             <h3 class="packages-card__title">White Palace</h3>
@@ -343,7 +344,7 @@
         </div>
         <!-- /.packages-card -->
 
-        <div class="packages-card grid-4">
+        <div class="packages-card grid-4" data-aos="flip-left" data-aos-delay="400">
           <img src="img/packages-04.jpg" alt="Luxury Place" class="packages-card__image">
           <div class="packages-card__info">
             <h3 class="packages-card__title">Luxury Place</h3>
@@ -379,7 +380,7 @@
         </div>
         <!-- /.packages-card -->
 
-        <div class="packages-card grid-5">
+        <div class="packages-card grid-5" data-aos="flip-left" data-aos-delay="600">
           <img src="img/packages-05.jpg" alt="Hotel Five Star" class="packages-card__image">
           <div class="packages-card__info">
             <h3 class="packages-card__title">Hotel Five Star</h3>
@@ -440,7 +441,7 @@
   <!-- /.newsletter -->
 
 
-  <section class="reviews">
+  <section class="reviews" data-aos="zoom-in-down">
     <div class="container">
       <h2 class="reviews__title">What people think about us</h2>
       
@@ -576,27 +577,27 @@
 
   <section class="activities">
     <div class="container">
-      <h2 class="activities__title">Other Activities</h2>
+      <h2 class="activities__title" data-aos="fade-right">Other Activities</h2>
       <div class="activities-wrapper">
-        <div class="card activities__card">
+        <div class="card activities__card" data-aos="fade-right" data-aos-delay="100">
           <img src="img/activity-01.jpg" alt="The curious corner of chamarel" class="card__image">
           <h3 class="card__title">The curious corner of chamarel</h3>
           <button class="card__button">Book Now</button>
         </div>
         <!-- /.card -->
-        <div class="card activities__card">
+        <div class="card activities__card" data-aos="fade-right" data-aos-delay="300">
           <img src="img/activity-02.jpg" alt="Gymkhana club golf course" class="card__image">
           <h3 class="card__title">Gymkhana club golf course</h3>
           <button class="card__button">Book Now</button>
         </div>
         <!-- /.card -->
-        <div class="card activities__card">
+        <div class="card activities__card" data-aos="fade-right" data-aos-delay="500">
           <img src="img/activity-03.jpg" alt="Tamarind falls hiking trip - full day" class="card__image">
           <h3 class="card__title">Tamarind falls hiking trip - full day</h3>
           <button class="card__button">Book Now</button>
         </div>
         <!-- /.card -->
-        <div class="card activities__card">
+        <div class="card activities__card" data-aos="fade-right" data-aos-delay="700">
           <img src="img/activity-04.jpg" alt="The blue marine discovery quest" class="card__image">
           <h3 class="card__title">The blue marine discovery quest</h3>
           <button class="card__button">Book Now</button>
@@ -821,6 +822,7 @@
   <script src="js/jquery.validate.min.js"></script>
   <script src="js/additional-methods.min.js"></script>
   <script src="js/jquery.mask.min.js"></script>
+  <script src="js/aos.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
