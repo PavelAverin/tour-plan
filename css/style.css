@@ -953,7 +953,7 @@ template {
 }
 
 .parallax-window__item {
-  background-image: url(../img/newsletter-bg.jpg);
+  background-image: url(../img/newsletter-bg.webp);
   position: absolute;
   background-repeat: no-repeat;
   background-size: cover;

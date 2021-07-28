@@ -34,10 +34,10 @@ $(document).ready(function () {
   });
   
   $('.parallax-window').parallax({
-    imageSrc: './img/newsletter-bg.jpg',
+    imageSrc: './img/newsletter-bg.webp',
     speed: 0.6,
   });
-  
+
 
   // Подключение Яндекс API   
   ymaps.ready(init);
