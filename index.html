@@ -6,10 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Best Tour Plan — Hotel Booking</title>
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" rel="preload">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/aos.css">
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=99d4b799-601d-41e0-82b1-3d64b374a679&lang=ru_RU"></script>
 </head>
 <body>
   <header class="navbar navbar__mobile--fixed">
@@ -750,14 +753,16 @@
         <div class="footer__contact-form">
           <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
           <form action="send.php" method="POST" class="footer__form form">
-            <div class="footer__input-group">
-            <input type="text" class="input footer__input input-name" placeholder="Your Full Name*" name="name" required>
+            <div class="footer__form-group">
+              <div class="footer__input-group">
+                <input type="text" class="input footer__input input-name" placeholder="Your Full Name*" name="name" required>
+              </div>
+              <!-- /.footer__input-group -->
+              <div class="footer__input-group">
+                <input type="tel" class="input footer__input phone_ru" placeholder="Phone Number*" name="phone" required>
+              </div>
+              <!-- /.footer__input-group -->
             </div>
-            <!-- /.footer__input-group -->
-            <div class="footer__input-group">
-            <input type="tel" class="input footer__input phone_ru" placeholder="Phone Number*" name="phone" required>
-            </div>
-            <!-- /.footer__input-group -->
             <textarea class="message footer__message" placeholder="Message" name="message"></textarea>
             <button class="button footer__button">Send</button>
             <span class="footer__info">* Required Fields</span>
@@ -817,7 +822,6 @@
   <script src="js/jquery-3.6.0.min.js"></script>
   <script src="js/parallax.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=99d4b799-601d-41e0-82b1-3d64b374a679&lang=ru_RU"></script>
   <script src="js/jquery.validate.min.js"></script>
   <script src="js/additional-methods.min.js"></script>
   <script src="js/jquery.mask.min.js"></script>
