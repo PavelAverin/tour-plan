@@ -144,6 +144,13 @@
   body
     padding-top: 78px
   .navbar
+    &--mobile
+      &--fixed
+        position: fixed
+        left: 0
+        top: 0
+        right: 0
+        z-index: 99
     &-top
       &__search
         &--mobile
@@ -159,13 +166,6 @@
             display: none
           &--visible
             display: flex
-    &__mobile
-      &--fixed
-        position: fixed
-        left: 0
-        top: 0
-        right: 0
-        z-index: 99
     &-bottom
       display: none
       position: fixed
@@ -174,6 +174,20 @@
       bottom: 0
       top: 78px
       padding-top: 30px
+      &__search
+        &--mobile
+          &--hidden
+            display: none
+          &--visible
+            display: flex
+      &__user
+        flex-direction: column
+        justify-content: start
+        &--mobile
+          &--hidden
+            display: none
+          &--visible
+            display: flex
       &--visible
         display: block
     &-menu

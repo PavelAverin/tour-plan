@@ -15,7 +15,7 @@
   <script src="https://api-maps.yandex.ru/2.1/?apikey=99d4b799-601d-41e0-82b1-3d64b374a679&lang=ru_RU"></script>
 </head>
 <body>
-  <header class="navbar navbar__mobile--fixed">
+  <header class="navbar navbar--mobile--fixed">
     <div class="container">
       <div class="navbar-top">
         <a href="/" class="logo">
@@ -50,13 +50,13 @@
       <div class="container">
         <ul class="navbar-menu">
           <li class="navbar-menu__item navbar-menu__item--mobile--visible">
-            <a href="#" class="user navbar-top__user navbar-top__user--mobile--visible">
+            <a href="#" class="user navbar-bottom__user navbar-bottom__user--mobile--visible">
               <img src="img/header/user-avatar.webp" alt="Avatar: Nathan" class="user__avatar">
               <span class="user__name user__name--light">Nathan</span>
             </a>
           </li>
           <li class="navbar-menu__item navbar-menu__item--mobile--visible">
-            <form action="#" class="search navbar-top__search navbar-top__search--mobile--visible">
+            <form action="#" class="search navbar-bottom__search navbar-bottom__search--mobile--visible">
               <input type="text" class="search__input" placeholder="Search Location">
               <button class="search__button">
                 <img src="img/header/search.svg" alt="Icon: Search">
@@ -731,7 +731,7 @@
                 <img src="img/contact-call.svg" alt="Icon: Phone Call" class="footer__icon">
               </div>
               <!-- /.footer__icon-wrapper -->
-              <div class="footer__links--phones">
+              <div class="footer__phones">
                 <a href="tel:2691500" class="footer__link">
                   Tel (business hours) : 269 1500
                 </a><br>
@@ -763,7 +763,7 @@
               </div>
               <!-- /.footer__input-group -->
               <div class="footer__input-group">
-                <input type="tel" class="input footer__input phone_ru" placeholder="Phone Number*" name="phone" required>
+                <input type="tel" class="input footer__input input-phone" placeholder="Phone Number*" name="phone" required>
               </div>
               <!-- /.footer__input-group -->
             </div>
@@ -809,7 +809,7 @@
         <h3 class="modal__title modal__title--mb-3">Send us a message</h3>
         <form action="send.php" method="POST" class="modal__form form">
           <input type="text" class="input modal__input input-name" placeholder="Your Full Name*" name="name" required>
-          <input type="tel" class="input modal__input phone_ru" placeholder="Phone Number*" name="phone" required>
+          <input type="tel" class="input modal__input input-phone" placeholder="Phone Number*" name="phone" required>
           <input type="email" class="input modal__input input-email" placeholder="Email*" name="email" required>
           <textarea class="message modal__message" placeholder="Message" name="message"></textarea>
           <button class="button modal__button btn-submit">Send</button>
