@@ -1,5 +1,6 @@
 .newsletter
-  padding: 98px 0 87px 0
+  padding-top: 98px
+  height: 260px
   &::before
     content: ''
     position: absolute
@@ -24,14 +25,16 @@
     font-weight: 300
     font-size: 24px
     line-height: 30px
+    margin: 0
     &__strong
       font-weight: 600
       font-size: 36px
       line-height: 45px
       text-transform: uppercase
 .parallax
+  height: 260px
   &-window
-    z-index: 1000
+    z-index: 100
     position: relative
     overflow: hidden
     &__item
@@ -40,15 +43,15 @@
       background-repeat: no-repeat
       background-size: cover
 .subscribe
-  position: relative
   width: 350px
-  height: 80px
   border-radius: 4px
   overflow: hidden
+  &__form
+    &-group
+      position: relative
+      width: 100%
   &__input
-    position: absolute
-    width: 100%
-    bottom: 0
+    width: 350px
     height: 55px
     border: none
     padding-left: 33px
@@ -60,7 +63,7 @@
     position: absolute
     min-width: 65px
     right: 0
-    bottom: 0
+    top: 0
     height: 55px
     border: none
     background-color: $primary
