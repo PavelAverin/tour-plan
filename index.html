@@ -11,7 +11,6 @@
   <link rel="preload" as="style" onload="this.rel='stylesheet'" media="all" href="css/swiper-bundle.min.css">
   <link rel="preload" as="style" onload="this.rel='stylesheet'" media="all" href="css/aos.css">
   <link rel="preload" as="style" onload="this.rel='stylesheet'" media="all" href="css/style.css">
-  <script defer src="https://api-maps.yandex.ru/2.1/?apikey=99d4b799-601d-41e0-82b1-3d64b374a679&lang=ru_RU"></script>
 </head>
 <body>
   <header class="navbar navbar--mobile--fixed">
@@ -114,7 +113,7 @@
   <section class="hotel">
     <div class="container">
       <div class="hotel-info">
-        <div class="hotel-info__text"  data-aos="fade-right" data-aos-delay="500">
+        <div class="hotel-info__text">
           <div class="hotel-info__wrapper">
             <div class="stars">
               <img src="img/Star.svg" alt="Icon: Star">
@@ -134,7 +133,7 @@
         </div>
         <!-- /.hotel-info__text -->
 
-        <div class="rating hotel-info__rating"  data-aos="fade-left" data-aos-delay="500">
+        <div class="rating hotel-info__rating">
           <span class="rating__text">User Rattings</span>
           <span class="rating__counter">4.5/5</span>
         </div>
@@ -143,7 +142,7 @@
       <!-- /.hotel-info -->
 
       <div class="hotel-grid">
-          <div class="swiper-container hotel-slider hotel__slider" data-aos="flip-left" data-aos-delay="700">
+          <div class="swiper-container hotel-slider hotel__slider">
             <div class="swiper-wrapper">
               <div class="swiper-slide hotel-slider__item">
                 <img class="swiper-slide__image" loading="lazy" src="img/hotel/slide-01.webp" alt="Slide">
@@ -173,7 +172,7 @@
           </div>
           <!-- /.swiper-container -->
 
-      <div class="hotel-right" data-aos="flip-right" data-aos-delay="900">
+      <div class="hotel-right">
         <div class="booking">
           <div class="booking__info">
             <div class="booking__price">
@@ -210,7 +209,12 @@
         <!-- /.booking -->
 
 
-        <div id="map" class="map"></div>
+        <div class="map">
+          <iframe class="map__iframe"
+                  src="https://www.google.com/maps/d/embed?mid=1jOpas8XxHAFHDoAZzeNaqOGxFJ-a7RjJ&hl=ru"
+                  loading="lazy" 
+                  ></iframe>
+        </div>
         <!-- /.map -->
       </div>
       <!-- /.hotel-right -->
@@ -224,7 +228,7 @@
 
   <section class="packages">
     <div class="container">
-      <h2 class="packages__title" data-aos="zoom-in">Other Packages</h2>
+      <h2 class="packages__title">Other Packages</h2>
       <div class="packages-wrapper">
         <div class="packages-card grid-1" data-aos="flip-left" data-aos-delay="100">
           <img src="img/packages/packages-01.webp" loading="lazy" alt="Hotel Blue Haven" class="packages-card__image packages-card__image--grid-1">
@@ -446,7 +450,7 @@
   <!-- /.newsletter -->
 
 
-  <section class="reviews" data-aos="zoom-in-down">
+  <section class="reviews">
     <div class="container">
       <h2 class="reviews__title">What people think about us</h2>
       
@@ -582,7 +586,7 @@
 
   <section class="activities">
     <div class="container">
-      <h2 class="activities__title" data-aos="fade-right">Other Activities</h2>
+      <h2 class="activities__title">Other Activities</h2>
       <div class="activities-wrapper">
         <div class="card activities__card" data-aos="fade-right" data-aos-delay="100">
           <img src="img/activities/activity-01.webp" loading="lazy" alt="The curious corner of chamarel" class="card__image">
