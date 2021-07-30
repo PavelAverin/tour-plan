@@ -119,6 +119,7 @@
   .modal
     &__dialog
       padding: 30px 50px
+      max-width: 92%
     &__form
       display: flex
       justify-content: space-between
@@ -129,6 +130,7 @@
     &__message
       order: 2
       flex-basis: 100%
+      margin-bottom: 15px
     &__info
       order: 3
       flex-basis: 100%
@@ -308,6 +310,9 @@
     &__input
       &-group
         flex-basis: 100%
+    &__bottom
+      &-wrapper
+        margin-top: 56px
   .close
     display: none
     &:before,
@@ -329,7 +334,7 @@
       display: flex
   .modal
     &__dialog
-      width: 92%
+      max-width: 92%
     &__title
       font-size: 10px
     &__input
@@ -342,6 +347,7 @@
       padding: 10px 13px
     &__info
     font-size: 10px
+    margin-top: 15px
     &__button
       font-size: 10px
       min-width: 100%
@@ -376,53 +382,71 @@
     width: 100%
   .packages
     padding-bottom: 80px
+    &__title
+      font-size: 18px
+      line-height: 23px
+      font-weight: bold
     &-wrapper
       grid-template-areas: "grid-1" "grid-1" "grid-2" "grid-2 " "grid-3" "grid-3" "grid-4" "grid-4" "grid-5" "grid-5"
       grid-template-rows: 1fr repeat(9, 250px)
       grid-template-columns: 1fr
       grid-row: 0
   .footer
+    padding: 69px 0 21px
     &-wrapper
-      grid-template-columns: 1fr
+      display: flex
+      align-items: flex-start
+      flex-wrap: wrap
     &__logo
-      grid-row: 1
-      grid-column: 1
+      order: -2
     &__social
       &-network
-        grid-row: 2
-        grid-column: 1
+        order: -2
+        flex-basis: 100%
+    &__legal
+      order: -2
     &__additional
-      grid-row: 3
-      grid-column: 1
-    &__categories
-      grid-row: 4
-      grid-column: 1
-    &__legal 
-      grid-row: 5
-      grid-column: 1
-    &__contact
-      &-details
-        grid-row: 6
-        grid-column: 1
-      &-form
-        grid-row: 7
-        grid-column: 1
+      order: -1
+    &__input
+      width: 100%
+    &__link
+      font-size: 10px
+    &__item
+      font-size: 10px
+    &__form
+      max-width: 300px
+    &__message
+      width: 100%
     &__button
       order: 1
     &__info
       order: 0
       flex-basis: 100%
       margin-bottom: 15px
+    &__bottom
+      &-wrapper
+        margin-top: 30px
+        flex-wrap: wrap
+        align-items: start
+    &__pays
+      margin-top: 10px
+    &__list
+      flex-basis: 100%
+  .modal
+    &__dialog
+      width: 90%
+  .reviews
+    &__title
+      font-size: 18px
+      line-height: 23px
+      font-weight: bold
+  .activities
+    &__title
+      font-size: 18px
+      line-height: 23px
+      font-weight: bold
 @media ( max-width: 350px )
   .footer
-    &-wrapper
-      display: flex
-      flex-direction: column
-    &__social
-      &-network
-        flex-wrap: wrap
-    &__contact
-      &-details
     &__input
       width: 100%
     &__link
@@ -437,6 +461,7 @@
     &-top
       &__search
         width: 80%
+  
   
 
 
