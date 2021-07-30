@@ -6,12 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Best Tour Plan — Hotel Booking</title>
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/swiper-bundle.min.css">
-  <link rel="stylesheet" href="css/aos.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" as="style" href="https://fonts.googleapis.com">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&family=Nunito:wght@400;600;700;800&display=swap" as="style" onload="this.rel='stylesheet'" media="all">
+  <link rel="preload" as="style" onload="this.rel='stylesheet'" media="all" href="css/swiper-bundle.min.css">
+  <link rel="preload" as="style" onload="this.rel='stylesheet'" media="all" href="css/aos.css">
+  <link rel="preload" as="style" onload="this.rel='stylesheet'" media="all" href="css/style.css">
 </head>
 <body>
   <header class="navbar navbar--mobile--fixed">
@@ -29,7 +28,7 @@
         </form>
 
         <a href="#" class="user navbar-top__user navbar-top__user--mobile--hidden" data-aos="fade-down" data-aos-delay="500">
-          <img src="img/header/user-avatar.webp" alt="Avatar: Nathan" class="user__avatar">
+          <img src="img/header/user-avatar.webp" loading="lazy" alt="Avatar: Nathan" class="user__avatar">
           <span class="user__name">Nathan</span>
         </a>
         <!-- /.user -->
@@ -50,7 +49,7 @@
         <ul class="navbar-menu">
           <li class="navbar-menu__item navbar-menu__item--mobile--visible">
             <a href="#" class="user navbar-bottom__user navbar-bottom__user--mobile--visible">
-              <img src="img/header/user-avatar.webp" alt="Avatar: Nathan" class="user__avatar">
+              <img src="img/header/user-avatar.webp" loading="lazy" alt="Avatar: Nathan" class="user__avatar">
               <span class="user__name user__name--light">Nathan</span>
             </a>
           </li>
@@ -146,23 +145,23 @@
           <div class="swiper-container hotel-slider hotel__slider" data-aos="flip-left" data-aos-delay="700">
             <div class="swiper-wrapper">
               <div class="swiper-slide hotel-slider__item">
-                <img class="swiper-slide__image" src="img/hotel/slide-01.webp" alt="Slide">
+                <img class="swiper-slide__image" loading="lazy" src="img/hotel/slide-01.webp" alt="Slide">
               </div>
               <!-- /.swiper-slide -->
               <div class="swiper-slide hotel-slider__item">
-                <img class="swiper-slide__image" src="img/hotel/slide-02.webp" alt="Slide">
+                <img class="swiper-slide__image" loading="lazy" src="img/hotel/slide-02.webp" alt="Slide">
               </div>
               <!-- /.swiper-slide -->
               <div class="swiper-slide hotel-slider__item">
-                <img class="swiper-slide__image" src="img/hotel/slide-03.webp" alt="Slide">
+                <img class="swiper-slide__image" loading="lazy" src="img/hotel/slide-03.webp" alt="Slide">
               </div>
               <!-- /.swiper-slide -->
               <div class="swiper-slide hotel-slider__item">
-                <img class="swiper-slide__image" src="img/hotel/slide-04.webp" alt="Slide">
+                <img class="swiper-slide__image" loading="lazy" src="img/hotel/slide-04.webp" alt="Slide">
               </div>
               <!-- /.swiper-slide -->
               <div class="swiper-slide hotel-slider__item">
-                <img class="swiper-slide__image" src="img/hotel/slide-05.webp" alt="Slide">
+                <img class="swiper-slide__image" loading="lazy" src="img/hotel/slide-05.webp" alt="Slide">
               </div>
               <!-- /.swiper-slide -->
             </div>
@@ -211,7 +210,7 @@
 
 
         <div class="map">
-          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A1c71c60af806bee9d549396a6c79065e81a67e7b0a5d7bdf2c3d2746e9b7e1b5&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
+          <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.5414950814966!2d98.29703101459867!3d7.838252394352206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x305025650c33dbab%3A0xa67a542329d011e1!2z0J_RhdGD0LrQtdGCLCDQmtCw0YDQvtC9LCDQntGC0LXQu9GMINCl0LjQu9GC0L7QvQ!5e0!3m2!1sru!2sru!4v1627634681208!5m2!1sru!2sru" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
         <!-- /.map -->
       </div>
@@ -229,7 +228,7 @@
       <h2 class="packages__title" data-aos="zoom-in">Other Packages</h2>
       <div class="packages-wrapper">
         <div class="packages-card grid-1" data-aos="flip-left" data-aos-delay="100">
-          <img src="img/packages/packages-01.webp" alt="Hotel Blue Haven" class="packages-card__image packages-card__image--grid-1">
+          <img src="img/packages/packages-01.webp" loading="lazy" alt="Hotel Blue Haven" class="packages-card__image packages-card__image--grid-1">
           <div class="packages-card__info packages-card__info--grid-1">
             <div class="packages-card__rating">
               <img src="img/Star.svg" alt="Icon: Star">
@@ -276,7 +275,7 @@
         <!-- /.packages-card -->
 
         <div class="packages-card grid-2" data-aos="flip-left" data-aos-delay="300">
-          <img src="img/packages/packages-02.webp" alt="LUX* Belle Mare" class="packages-card__image">
+          <img src="img/packages/packages-02.webp" loading="lazy" alt="LUX* Belle Mare" class="packages-card__image">
           <div class="packages-card__info">
             <h3 class="packages-card__title">LUX* Belle Mare</h3>
             <div class="packages-card__about">
@@ -312,7 +311,7 @@
         <!-- /.packages-card -->
 
         <div class="packages-card grid-3" data-aos="flip-left" data-aos-delay="200">
-          <img src="img/packages/packages-03.webp" alt="White Palace" class="packages-card__image">
+          <img src="img/packages/packages-03.webp" loading="lazy" alt="White Palace" class="packages-card__image">
           <div class="packages-card__info">
             <h3 class="packages-card__title">White Palace</h3>
             <div class="packages-card__about">
@@ -348,7 +347,7 @@
         <!-- /.packages-card -->
 
         <div class="packages-card grid-4" data-aos="flip-left" data-aos-delay="400">
-          <img src="img/packages/packages-04.webp" alt="Luxury Place" class="packages-card__image">
+          <img src="img/packages/packages-04.webp" loading="lazy" alt="Luxury Place" class="packages-card__image">
           <div class="packages-card__info">
             <h3 class="packages-card__title">Luxury Place</h3>
             <div class="packages-card__about">
@@ -384,7 +383,7 @@
         <!-- /.packages-card -->
 
         <div class="packages-card grid-5" data-aos="flip-left" data-aos-delay="600">
-          <img src="img/packages/packages-05.webp" alt="Hotel Five Star" class="packages-card__image">
+          <img src="img/packages/packages-05.webp" loading="lazy" alt="Hotel Five Star" class="packages-card__image">
           <div class="packages-card__info">
             <h3 class="packages-card__title">Hotel Five Star</h3>
             <div class="packages-card__about">
@@ -427,7 +426,7 @@
 
 
   <section class="newsletter parallax-window">
-    <div class="parallax-window__item" data-parallax="scroll" data-image-src="img/newsletter-bg.jpg"></div>
+    <div class="parallax-window__item" data-parallax="scroll" data-image-src="img/newsletter-bg.webp"></div>
     <!-- /.parallax-window -->
     <div class="newsletter-wrapper">
       <h2 class="newsletter-title newsletter__title">
@@ -457,7 +456,7 @@
           <div class="swiper-slide">
             <div class="reviews-slider__item">
               <div class="reviews-slider__profile">
-                <img src="img/reviews/reviews-avatar-01.webp" alt="Photo: Megan Fox" class="reviews-slider__avatar">
+                <img src="img/reviews/reviews-avatar-01.webp" loading="lazy" alt="Photo: Megan Fox" class="reviews-slider__avatar">
                 <h3 class="reviews-slider__username">Megan Fox</h3>
                 <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
                 <div class="reviews-slider__rating">
@@ -480,7 +479,7 @@
           <div class="swiper-slide">
             <div class="reviews-slider__item">
               <div class="reviews-slider__profile">
-                <img src="img/reviews/reviews-avatar-02.webp" alt="Photo: Megan Fox" class="reviews-slider__avatar">
+                <img src="img/reviews/reviews-avatar-02.webp" loading="lazy" alt="Photo: Megan Fox" class="reviews-slider__avatar">
                 <h3 class="reviews-slider__username">John Green</h3>
                 <span class="reviews-slider__date">Stayed 24 Dec, 2019</span>
                 <div class="reviews-slider__rating">
@@ -503,7 +502,7 @@
           <div class="swiper-slide">
             <div class="reviews-slider__item">
               <div class="reviews-slider__profile">
-                <img src="img/reviews/reviews-avatar-03.webp" alt="Photo: Megan Fox" class="reviews-slider__avatar">
+                <img src="img/reviews/reviews-avatar-03.webp" loading="lazy" alt="Photo: Megan Fox" class="reviews-slider__avatar">
                 <h3 class="reviews-slider__username">Emma Stone</h3>
                 <span class="reviews-slider__date">Stayed 2 Jan, 2020</span>
                 <div class="reviews-slider__rating">
@@ -526,7 +525,7 @@
           <div class="swiper-slide">
             <div class="reviews-slider__item">
               <div class="reviews-slider__profile">
-                <img src="img/reviews/reviews-avatar-04.webp" alt="Photo: Megan Fox" class="reviews-slider__avatar">
+                <img src="img/reviews/reviews-avatar-04.webp" loading="lazy" alt="Photo: Megan Fox" class="reviews-slider__avatar">
                 <h3 class="reviews-slider__username">Alexander Brooks</h3>
                 <span class="reviews-slider__date">Stayed 10 Jan, 2020</span>
                 <div class="reviews-slider__rating">
@@ -549,7 +548,7 @@
           <div class="swiper-slide">
             <div class="reviews-slider__item">
               <div class="reviews-slider__profile">
-                <img src="img/reviews/reviews-avatar-05.webp" alt="Photo: Megan Fox" class="reviews-slider__avatar">
+                <img src="img/reviews/reviews-avatar-05.webp" loading="lazy" alt="Photo: Megan Fox" class="reviews-slider__avatar">
                 <h3 class="reviews-slider__username">Kate Jackson</h3>
                 <span class="reviews-slider__date">Stayed 12 Feb, 2020</span>
                 <div class="reviews-slider__rating">
@@ -587,25 +586,25 @@
       <h2 class="activities__title" data-aos="fade-right">Other Activities</h2>
       <div class="activities-wrapper">
         <div class="card activities__card" data-aos="fade-right" data-aos-delay="100">
-          <img src="img/activities/activity-01.webp" alt="The curious corner of chamarel" class="card__image">
+          <img src="img/activities/activity-01.webp" loading="lazy" alt="The curious corner of chamarel" class="card__image">
           <h3 class="card__title">The curious corner of chamarel</h3>
           <button class="card__button">Book Now</button>
         </div>
         <!-- /.card -->
         <div class="card activities__card" data-aos="fade-right" data-aos-delay="300">
-          <img src="img/activities/activity-02.webp" alt="Gymkhana club golf course" class="card__image">
+          <img src="img/activities/activity-02.webp" loading="lazy" alt="Gymkhana club golf course" class="card__image">
           <h3 class="card__title">Gymkhana club golf course</h3>
           <button class="card__button">Book Now</button>
         </div>
         <!-- /.card -->
         <div class="card activities__card" data-aos="fade-right" data-aos-delay="500">
-          <img src="img/activities/activity-03.webp" alt="Tamarind falls hiking trip - full day" class="card__image">
+          <img src="img/activities/activity-03.webp" loading="lazy" alt="Tamarind falls hiking trip - full day" class="card__image">
           <h3 class="card__title">Tamarind falls hiking trip - full day</h3>
           <button class="card__button">Book Now</button>
         </div>
         <!-- /.card -->
         <div class="card activities__card" data-aos="fade-right" data-aos-delay="700">
-          <img src="img/activities/activity-04.webp" alt="The blue marine discovery quest" class="card__image">
+          <img src="img/activities/activity-04.webp" loading="lazy" alt="The blue marine discovery quest" class="card__image">
           <h3 class="card__title">The blue marine discovery quest</h3>
           <button class="card__button">Book Now</button>
         </div>
@@ -622,7 +621,7 @@
     <div class="container">
       <div class="footer-wrapper">
         <a href="index.html" class="footer__logo">
-          <img src="img/vertical-logo.svg" alt="Logo: Best Tour Plan" class="logo footer__logo">
+          <img src="img/vertical-logo.svg" loading="lazy" alt="Logo: Best Tour Plan" class="logo footer__logo">
         </a>
         <div class="footer__list footer__categories">
           <h3 class="footer__title">ALL CATEGORIES</h3>
@@ -735,15 +734,15 @@
               </div>
               <!-- /.footer__icon-wrapper -->
               <div class="footer__phones">
-                <a href="tel:2691500" class="footer__link">
-                  Tel (business hours) : 269 1500
-                </a><br>
-                <a href="tel:52-56-61-38" class="footer__link">
-                  Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00 pm)
-                </a><br>
-                <a href="tel:52-56-61-38" class="footer__link">
-                  Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)
-                </a>
+                <div href="tel:2691500" class="footer__link">
+                  Tel (business hours) : <a class="footer__link--tel" href="tel:2691500">269 1500</a>
+                </div>
+                <div class="footer__link">
+                  Tel (hotline) Monday - Saturday: <a class="footer__link--tel" href="tel:52-56-61-38">52-56-61-38</a> (08:00 am – 20:00 pm)
+                </div>
+                <div  class="footer__link">
+                  Tel (hotline) Sunday: <a class="footer__link--tel" href="tel:52-56-61-38">52-56-61-38</a> (08:00 am – 14:00 pm)
+                </div>
               </div>
             </li>
             <li class="footer__item footer__item--mb-2">
@@ -787,7 +786,7 @@
           </div>
           <!-- /.footer__links -->
           <div class="footer__pays">
-            <img src="img/footer-bottom-pays.jpg" alt="Image: Pays">
+            <img src="img/footer-bottom-pays.jpg" loading="lazy" alt="Image: Pays">
           </div>
           <!-- /.footer__pays -->
         </div>
@@ -825,14 +824,14 @@
   </div>
   <!-- /.modal -->
 
+  <script defer src="js/jquery-3.6.0.min.js"></script>
+  <script defer src="js/parallax.min.js"></script>
+  <script defer src="js/jquery.validate.min.js"></script>
+  <script defer src="js/additional-methods.min.js"></script>
+  <script defer src="js/jquery.mask.min.js"></script>
+  <script defer src="js/aos.js"></script>
+  <script defer src="js/swiper-bundle.min.js"></script>
+  <script defer src="js/main.js"></script>
 
-  <script src="js/jquery-3.6.0.min.js"></script>
-  <script src="js/parallax.min.js"></script>
-  <script src="js/swiper-bundle.min.js"></script>
-  <script src="js/jquery.validate.min.js"></script>
-  <script src="js/additional-methods.min.js"></script>
-  <script src="js/jquery.mask.min.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="js/main.js"></script>
 </body>
 </html>
