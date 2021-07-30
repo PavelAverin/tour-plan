@@ -11,6 +11,7 @@
   <link rel="preload" as="style" onload="this.rel='stylesheet'" media="all" href="css/swiper-bundle.min.css">
   <link rel="preload" as="style" onload="this.rel='stylesheet'" media="all" href="css/aos.css">
   <link rel="preload" as="style" onload="this.rel='stylesheet'" media="all" href="css/style.css">
+  <script defer src="https://api-maps.yandex.ru/2.1/?apikey=99d4b799-601d-41e0-82b1-3d64b374a679&lang=ru_RU"></script>
 </head>
 <body>
   <header class="navbar navbar--mobile--fixed">
@@ -209,9 +210,7 @@
         <!-- /.booking -->
 
 
-        <div class="map">
-          <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.5414950814966!2d98.29703101459867!3d7.838252394352206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x305025650c33dbab%3A0xa67a542329d011e1!2z0J_RhdGD0LrQtdGCLCDQmtCw0YDQvtC9LCDQntGC0LXQu9GMINCl0LjQu9GC0L7QvQ!5e0!3m2!1sru!2sru!4v1627634681208!5m2!1sru!2sru" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
+        <div id="map" class="map"></div>
         <!-- /.map -->
       </div>
       <!-- /.hotel-right -->
