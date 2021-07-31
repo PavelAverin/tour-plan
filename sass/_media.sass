@@ -27,7 +27,7 @@
         flex-wrap: wrap
     &__input
       &-group
-        flex-basis: 100%    
+        flex-basis: 100% 
 @media ( max-width: 992px )
   .container,
   .newsletter-wrapper
@@ -195,6 +195,10 @@
             display: flex
       &--visible
         display: block
+        overflow: auto
+        max-height: 100vh
+      &--unfixed
+        position: relative
     &-menu
       flex-direction: column
       &__item

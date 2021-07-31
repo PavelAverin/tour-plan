@@ -6,27 +6,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Best Tour Plan — Hotel Booking</title>
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&family=Nunito:wght@400;600;700;800& display=swap" as="style" onload="this.rel='stylesheet'" media="all">
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/jquery-3.6.0.min.js"></script>
 </head>
 <body>
-  <header class="navbar navbar__mobile--fixed">
+  <header class="navbar navbar--mobile--fixed">
     <div class="container">
       <div class="navbar-top">
         <a href="index.html" class="logo">
-          <img src="img/header/horizontal-logo.svg" alt="Logo: Best Tour Plan" class="logo__image">
+          <img width="177" height="24" src="img/header/horizontal-logo.svg" alt="Logo: Best Tour Plan" class="logo__image" data-aos="fade-down" data-aos-delay="100">
         </a>
 
-        <form action="#" class="search navbar-top__search navbar-top__search--mobile--hidden">
+        <form action="#" class="search navbar-top__search navbar-top__search--mobile--hidden" data-aos="fade-down" data-aos-delay="300">
           <input type="text" class="search__input" placeholder="Search Location">
           <button class="search__button">
-            <img src="img/header/search.svg" alt="Icon: Search">
+            <img width="16" height="16" src="img/header/search.svg" alt="Icon: Search">
           </button>
         </form>
 
-        <a href="#" class="user navbar-top__user navbar-top__user--mobile--hidden">
-          <img src="img/header/user-avatar.webp" alt="Avatar: Nathan" class="user__avatar">
+        <a href="#" class="user navbar-top__user navbar-top__user--mobile--hidden" data-aos="fade-down" data-aos-delay="500">
+          <img width="40" height="40" src="img/header/user-avatar.jpg" loading="lazy" alt="Avatar: Nathan" class="user__avatar">
           <span class="user__name">Nathan</span>
         </a>
         <!-- /.user -->
@@ -46,38 +48,38 @@
       <div class="container">
         <ul class="navbar-menu">
           <li class="navbar-menu__item navbar-menu__item--mobile--visible">
-            <a href="#" class="user navbar-top__user navbar-top__user--mobile--visible">
-              <img src="img/header/user-avatar.webp" alt="Avatar: Nathan" class="user__avatar">
+            <a href="#" class="user navbar-bottom__user navbar-bottom__user--mobile--visible">
+              <img width="40" height="40" src="img/header/user-avatar.jpg" loading="lazy" alt="Avatar: Nathan" class="user__avatar">
               <span class="user__name user__name--light">Nathan</span>
             </a>
           </li>
           <li class="navbar-menu__item navbar-menu__item--mobile--visible">
-            <form action="#" class="search navbar-top__search navbar-top__search--mobile--visible">
+            <form action="#" class="search navbar-bottom__search navbar-bottom__search--mobile--visible">
               <input type="text" class="search__input" placeholder="Search Location">
               <button class="search__button">
-                <img src="img/header/search.svg" alt="Icon: Search">
+                <img width="16" height="16" src="img/header/search.svg" alt="Icon: Search">
               </button>
             </form>
           </li>
-          <li class="navbar-menu__item">
+          <li class="navbar-menu__item" data-aos="fade-right" data-aos-delay="100">
             <a href="#" class="navbar-menu__link">All Deals</a>
           </li>
-          <li class="navbar-menu__item">
+          <li class="navbar-menu__item" data-aos="fade-right" data-aos-delay="200">
             <a href="#" class="navbar-menu__link">Hotels</a>
           </li>
-          <li class="navbar-menu__item">
+          <li class="navbar-menu__item" data-aos="fade-right" data-aos-delay="300">
             <a href="#" class="navbar-menu__link">Activities</a>
           </li>
-          <li class="navbar-menu__item">
+          <li class="navbar-menu__item" data-aos="fade-right" data-aos-delay="400">
             <a href="#" class="navbar-menu__link">Hotel Day Packages</a>
           </li>
-          <li class="navbar-menu__item">
+          <li class="navbar-menu__item" data-aos="fade-right" data-aos-delay="500">
             <a href="#" class="navbar-menu__link">Restaurants</a>
           </li>
-          <li class="navbar-menu__item">
+          <li class="navbar-menu__item" data-aos="fade-right" data-aos-delay="600">
             <a href="#" class="navbar-menu__link">Events</a>
           </li>
-          <li class="navbar-menu__item">
+          <li class="navbar-menu__item" data-aos="fade-right" data-aos-delay="700">
             <a href="#" class="navbar-menu__link">Rodrigues</a>
           </li>
         </ul>
@@ -119,12 +121,11 @@
           <p class="hotel-info__description">
             Наш менеджер позвонит Вам через 5 минут.
           </p>
+          <a href="index.html" class="hotel-info__back">Вернуться назад</a href="index.html">
         </div>
         <!-- /.hotel-info__text -->
-
       </div>
       <!-- /.hotel-info -->
-
     </div>
     <!-- /.container -->
   </section>
@@ -136,7 +137,7 @@
     <div class="container">
       <div class="footer-wrapper">
         <a href="index.html" class="footer__logo">
-          <img src="img/vertical-logo.svg" alt="Logo: Best Tour Plan" class="logo footer__logo">
+          <img width="166" height="192" src="img/vertical-logo.svg" loading="lazy" alt="Logo: Best Tour Plan" class="logo footer__logo">
         </a>
         <div class="footer__list footer__categories">
           <h3 class="footer__title">ALL CATEGORIES</h3>
@@ -197,14 +198,14 @@
         <div class="footer__social-network">
           <h3 class="footer__title footer__title--inline">Social Network</h3>
           <div class="footer__social-links">
-            <a href="#" class="footer__link">
-              <img src="img/facebook.svg" alt="Icon: Facebook">
+            <a href="#" class="footer__link footer__link--svg">
+              <img width="20" height="20" src="img/facebook.svg" alt="Icon: Facebook">
             </a>
-            <a href="#" class="footer__link">
-              <img src="img/youtube.svg" alt="Icon: YouTube">
+            <a href="#" class="footer__link footer__link--svg">
+              <img width="20" height="20" src="img/youtube.svg" alt="Icon: YouTube">
             </a>
-            <a href="#" class="footer__link">
-              <img src="img/instagram.svg" alt="Icon: Instagram">
+            <a href="#" class="footer__link footer__link--svg">
+              <img width="20" height="20" src="img/instagram.svg" alt="Icon: Instagram">
             </a>
           </div>
           <!-- /.footer__social-links -->
@@ -238,31 +239,31 @@
           <ul class="footer__ul">
             <li class="footer__item footer__item--mb-2">
               <div class="footer__icon-wrapper">
-                <img src="img/contact-map-marker.svg" alt="Icon: Map-Marker" class="footer__icon">
+                <img width="14" height="20" src="img/contact-map-marker.svg" alt="Icon: Map-Marker" class="footer__icon">
               </div>
               <!-- /.footer__icon-wrapper -->
               9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United States
             </li>
             <li class="footer__item footer__item--mb-2">
               <div class="footer__icon-wrapper">
-                <img src="img/contact-call.svg" alt="Icon: Phone Call" class="footer__icon">
+                <img width="18" height="18" src="img/contact-call.svg" alt="Icon: Phone Call" class="footer__icon">
               </div>
               <!-- /.footer__icon-wrapper -->
               <div class="footer__phones">
-                <div href="tel:2691500" class="footer__link">
+                <div class="footer__tel">
                   Tel (business hours) : <a class="footer__link--tel" href="tel:2691500">269 1500</a>
                 </div>
-                <div class="footer__link">
-                  Tel (hotline) Monday - Saturday: <a class="footer__link--tel" href="tel:52-56-61-38">52-56-61-38</a> (08:00 am – 20:00 pm)
+                <div class="footer__tel">
+                  Tel (hotline) Monday - Saturday : <a class="footer__link--tel" href="tel:52-56-61-38">52-56-61-38</a> (08:00 am – 20:00 pm)
                 </div>
-                <div  class="footer__link">
-                  Tel (hotline) Sunday: <a class="footer__link--tel" href="tel:52-56-61-38">52-56-61-38</a> (08:00 am – 14:00 pm)
+                <div  class="footer__tel">
+                  Tel (hotline) Sunday : <a class="footer__link--tel" href="tel:52-56-61-38">52-56-61-38</a> (08:00 am – 14:00 pm)
                 </div>
               </div>
             </li>
             <li class="footer__item footer__item--mb-2">
               <div class="footer__icon-wrapper">
-                <img src="img/contact-email.svg" alt="Icon: Email" class="footer__icon">
+                <img width="18" height="18" src="img/contact-email.svg" alt="Icon: Email" class="footer__icon">
               </div>
               <!-- /.footer__icon-wrapper -->
               <a class="footer__link" href="mailto:cherly.lawson@example.com">cherly.lawson@example.com</a>
@@ -281,7 +282,7 @@
           </div>
           <!-- /.footer__links -->
           <div class="footer__pays">
-            <img src="img/footer-bottom-pays.jpg" alt="Image: Pays">
+            <img width="136" height="22" src="img/footer-bottom-pays.jpg" loading="lazy" alt="Image: Pays">
           </div>
           <!-- /.footer__pays -->
         </div>
@@ -294,7 +295,12 @@
   <!-- /.footer -->
 
 
-  <script src="js/jquery-3.6.0.min.js"></script>
-  <script src="js/main.js"></script>
+  <script defer src="js/parallax.min.js"></script>
+  <script defer src="js/jquery.validate.min.js"></script>
+  <script defer src="js/additional-methods.min.js"></script>
+  <script defer src="js/jquery.mask.min.js"></script>
+  <script defer src="js/aos.js"></script>
+  <script defer src="js/swiper-bundle.min.js"></script>
+  <script defer src="js/main.js"></script>
 </body>
 </html>
